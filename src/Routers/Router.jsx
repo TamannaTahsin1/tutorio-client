@@ -5,6 +5,7 @@ import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AllClasses from "../Pages/AllClasses/AllClasses";
 import AllClassesCard from "../Pages/AllClasses/AllClassesCard";
+import Partners from "../Pages/Home/Partners/Partners";
 
 const router = createBrowserRouter([
   {
@@ -28,6 +29,11 @@ const router = createBrowserRouter([
         {
             path: "/login",
             element: <Login></Login>,
+        },
+        {
+            path: "/partners",
+            element: <Partners></Partners>,
+            loader: () => fetch('/partners.json'),
         },
         {
             path: "/register",
