@@ -1,0 +1,273 @@
+[
+    {
+      "id": 1,
+      "title": "Introduction to Computer Science",
+      "name": "CS101",
+      "image": "https://i.ibb.co/JtghC2J/html-system-website-concept-23-2150376770.jpg",
+      "price": 49.99,
+      "short_description": "Learn the fundamentals of computer science.",
+      "total_enrollment": 120
+    },
+    {
+      "id": 2,
+      "title": "Web Development Boot camp",
+      "name": "WD200",
+      "image": "https://i.ibb.co/z2wpwy6/web-development-concept-isometric-landing-page-team-develops-optimizes-layout-site-9209-7568.jpg",
+      "price": 79.99,
+      "short_description": "Master the art of building modern websites.",
+      "total_enrollment": 90
+    },
+    {
+      "id": 3,
+      "title": "Data Science Essentials",
+      "name": "DS300",
+      "image": "https://i.ibb.co/0mXVMmV/data-science-concept-blue-backgroundmachine-learning-big-data-database-classification-simple-icons-1.jpg",
+      "price": 99.99,
+      "short_description": "Explore the world of data analysis and machine learning.",
+      "total_enrollment": 75
+    },
+    {
+      "id": 4,
+      "title": "Graphic Design Fundamentals",
+      "name": "GD150",
+      "image": "https://i.ibb.co/tcVt0KS/design-word-cloud-innovation-idea-creativity-design-concept-505353-280.jpg",
+      "price": 59.99,
+      "short_description": "Unlock your creativity with the basics of graphic design.",
+      "total_enrollment": 105
+    },
+    {
+      "id": 5,
+      "title": "Photography Workshop",
+      "name": "PH200",
+      "image": "https://i.ibb.co/3rWw5M7/vertical-poster-template-photographer-career-hobby-23-2150306814.jpg",
+      "price": 69.99,
+      "short_description": "Capture stunning moments with the art of photography.",
+      "total_enrollment": 80
+    },
+    {
+      "id": 6,
+      "title": "Business Management Principles",
+      "name": "BM250",
+      "image": "https://i.ibb.co/94r2nc5/business-development-startup-growth-statistics-concept-53876-147951.jpg",
+      "price": 89.99,
+      "short_description": "Develop essential skills for effective business leadership.",
+      "total_enrollment": 110
+    },
+    {
+      "id": 7,
+      "title": "Digital Marketing Strategies",
+      "name": "DM180",
+      "image": "https://i.ibb.co/MpyPymj/content-marketing-data-blogging-media-publication-information-vision-content-concept-36325-4594.jpg",
+      "price": 79.99,
+      "short_description": "Learn to promote products and services in the digital age.",
+      "total_enrollment": 95
+    },
+    {
+      "id": 8,
+      "title": "Spanish Language Basics",
+      "name": "SLB120",
+      "image": "https://i.ibb.co/1MR16V4/learn-spanish-language-online-education-concept-53876-132596.jpg",
+      "price": 54.99,
+      "short_description": "Get started with the basics of the Spanish language.",
+      "total_enrollment": 65
+    },
+    {
+      "id": 9,
+      "title": "Artificial Intelligence Foundations",
+      "name": "AI250",
+      "image": "https://i.ibb.co/568mTdg/3d-rendering-futuristic-robot-technology-development-artificial-intelligence-ai-31965-13140.jpg",
+      "price": 109.99,
+      "short_description": "Dive into the fascinating world of artificial intelligence.",
+      "total_enrollment": 85
+    },
+    {
+      "id": 10,
+      "title": "Mobile App Development",
+      "name": "MAD220",
+      "image": "https://i.ibb.co/H4LJ0G8/app-development-banner-33099-1720.jpg",
+      "price": 74.99,
+      "short_description": "Create powerful and user-friendly mobile applications.",
+      "total_enrollment": 100
+    },
+    {
+      "id": 11,
+      "title": "Fitness and Wellness",
+      "name": "FW150",
+      "image": "https://i.ibb.co/9VGJkGX/dumbbells-salad-with-healthy-food-menu-concept-23-2148322480.jpg",
+      "price": 49.99,
+      "short_description": "Achieve a healthier lifestyle with fitness and wellness tips.",
+      "total_enrollment": 70
+    },
+    {
+      "id": 12,
+      "title": "Environmental Science",
+      "name": "ES180",
+      "image": "https://i.ibb.co/xjN9501/experiment-biotechnology-with-chemistry-science-23-2150365013.jpg",
+      "price": 64.99,
+      "short_description": "Explore the impact of human activities on the environment.",
+      "total_enrollment": 88
+    },
+    {
+      "id": 13,
+      "title": "Music Theory Basics",
+      "name": "MTB200",
+      "image": "https://i.ibb.co/wYG7qNs/person-practicing-music-home-studio-23-2148924259.jpg",
+      "price": 59.99,
+      "short_description": "Understand the fundamentals of music theory.",
+      "total_enrollment": 120
+    },
+    {
+      "id": 14,
+      "title": "Introduction to Psychology",
+      "name": "PSY101",
+      "image": "https://i.ibb.co/d0DtvVN/mental-health-care-sketch-diagram-53876-128059.jpg",
+      "price": 69.99,
+      "short_description": "Explore the basic principles of psychology.",
+      "total_enrollment": 95
+    },
+    {
+      "id": 15,
+      "title": "Creative Writing Workshop",
+      "name": "CW180",
+      "image": "https://i.ibb.co/MDCNBKY/national-handwriting-day-banner-design-1308-124631.jpg",
+      "price": 54.99,
+      "short_description": "Unleash your creativity through the art of writing.",
+      "total_enrollment": 80
+    },
+    {
+      "id": 16,
+      "title": "Cybersecurity Fundamentals",
+      "name": "CSF220",
+      "image": "https://i.ibb.co/p2zNX7C/cyber-security-technology-illustration-24908-59533.jpg",
+      "price": 89.99,
+      "short_description": "Learn the basics of protecting digital assets from cyber threats.",
+      "total_enrollment": 110
+    },
+    {
+      "id": 17,
+      "title": "Robotics and Automation",
+      "name": "RA200",
+      "image": "https://i.ibb.co/yfXKt73/robotic-arm-realistic-poster-with-future-technology-symbols-1284-33279.jpg",
+      "price": 94.99,
+      "short_description": "Discover the world of robotics and automated systems.",
+      "total_enrollment": 75
+    },
+    {
+      "id": 18,
+      "title": "Fashion Design Essentials",
+      "name": "FDE150",
+      "image": "https://i.ibb.co/NKyKcHn/flat-lay-organic-dye-collection-23-2148883220.jpg",
+      "price": 79.99,
+      "short_description": "Learn the basics of fashion design and garment construction.",
+      "total_enrollment": 105
+    },
+    {
+      "id": 19,
+      "title": "History of Art and Architecture",
+      "name": "HAA180",
+      "image": "https://i.ibb.co/hMdZvCK/charles-bridge-prague-1204-237.jpg",
+      "price": 64.99,
+      "short_description": "Explore the rich history of art and architectural styles.",
+      "total_enrollment": 90
+    },
+    {
+      "id": 20,
+      "title": "Economics for Beginners",
+      "name": "EB200",
+      "image": "https://i.ibb.co/nb8kSgc/finance-economics-work-male-discussion-laptop-1418-79.jpg",
+      "price": 49.99,
+      "short_description": "Gain a basic understanding of economic principles.",
+      "total_enrollment": 85
+    },
+    {
+      "id": 21,
+      "title": "Public Speaking Mastery",
+      "name": "PSM250",
+      "image": "https://i.ibb.co/CBCJKP6/microphone-abstract-blurred-photo-conference-hall-41418-1272.jpg",
+      "price": 74.99,
+      "short_description": "Develop effective public speaking skills for success.",
+      "total_enrollment": 100
+    },
+    {
+      "id": 22,
+      "title": "Astrophysics Explained",
+      "name": "AE220",
+      "image": "https://i.ibb.co/4j44Qbp/back-view-young-businessman-with-smartphone-standing-front-blackboard-961443-2331.jpg",
+      "price": 99.99,
+      "short_description": "Delve into the mysteries of the universe with astrophysics.",
+      "total_enrollment": 65
+    },
+    {
+      "id": 23,
+      "title": "Yoga and Meditation Practices",
+      "name": "YMP180",
+      "image": "https://i.ibb.co/x66f8Qd/international-yoga-day-vector-illustration-minimal-flat-vector-19856-194.jpg",
+      "price": 59.99,
+      "short_description": "Achieve balance and serenity through yoga and meditation.",
+      "total_enrollment": 75
+    },
+    {
+      "id": 24,
+      "title": "Advanced Python Programming",
+      "name": "APP300",
+      "image": "https://i.ibb.co/w03WSfS/python-programming-code-abstract-technology-background-272306-146.jpg",
+      "price": 89.99,
+      "short_description": "Take your Python skills to the next level with advanced programming concepts.",
+      "total_enrollment": 95
+    },
+    {
+      "id": 25,
+      "title": "Artificial Neural Networks",
+      "name": "ANN250",
+      "image": "https://i.ibb.co/3FPcCv8/image-brain-with-glowing-sign-that-says-ai-891197-23.jpg",
+      "price": 109.99,
+      "short_description": "Explore the architecture and applications of artificial neural networks.",
+      "total_enrollment": 80
+    },
+    {
+      "id": 26,
+      "title": "Introduction to Astrophotography",
+      "name": "IA180",
+      "image": "https://i.ibb.co/H2P8srY/exploration-nature-star-field-with-telescope-generated-by-ai-188544-26097.jpg",
+      "price": 69.99,
+      "short_description": "Learn the techniques and equipment needed for stunning astrophotography.",
+      "total_enrollment": 110
+    },
+    {
+      "id": 27,
+      "title": "Business Analytics with Excel",
+      "name": "BAE200",
+      "image": "https://i.ibb.co/vVLzVbs/businessman-analyzing-graphs-laptop-while-working-with-colleague-office-662251-191.jpg",
+      "price": 79.99,
+      "short_description": "Master the use of Excel for business data analysis and decision-making.",
+      "total_enrollment": 100
+    },
+    {
+      "id": 28,
+      "title": "Introduction to Quantum Computing",
+      "name": "QC101",
+      "image": "https://i.ibb.co/tJ12bB1/creative-abstract-quantum-illustration-23-2149237141.jpg",
+      "price": 94.99,
+      "short_description": "Explore the principles and potential applications of quantum computing.",
+      "total_enrollment": 120
+    },
+    {
+      "id": 29,
+      "title": "Mobile Game Development",
+      "name": "MGD220",
+      "image": "https://i.ibb.co/9vJ03p9/game-development-composition-1284-68567.jpg",
+      "price": 74.99,
+      "short_description": "Create engaging and entertaining mobile games from scratch.",
+      "total_enrollment": 85
+    },
+    {
+      "id": 30,
+      "title": "Introduction to Machine Learning",
+      "name": "ML101",
+      "image": "https://i.ibb.co/G5dmtGz/person-utilizing-ai-tools-daily-tasks-23-2150879483.jpg",
+      "price": 64.99,
+      "short_description": "Get started with the basics of machine learning algorithms and applications.",
+      "total_enrollment": 95
+    }
+  ]
+  

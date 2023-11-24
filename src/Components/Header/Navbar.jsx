@@ -15,7 +15,7 @@ const Navbar = () => {
               ? "text-white font-bold bg-yellow-500"
               : ""
           }>
-          HOME
+          Home
         </NavLink>
       </li>
       <li className='font-bold'>
@@ -28,7 +28,7 @@ const Navbar = () => {
               ? "text-white font-bold bg-yellow-500"
               : ""
           }>
-          HOME
+          All Classes
         </NavLink>
       </li>
     </>
