@@ -7,11 +7,14 @@ import AllClasses from "../Pages/AllClasses/AllClasses";
 import AllClassesCard from "../Pages/AllClasses/AllClassesCard";
 import Partners from "../Pages/Home/Partners/Partners";
 import Classes from "../Pages/Classes/Classes";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
+import AllClassesDetails from "../Pages/AllClasses/AllClassesDetails";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
         {
             path: "/",
@@ -26,6 +29,11 @@ const router = createBrowserRouter([
         {
             path: "/classes",
             element: <AllClassesCard></AllClassesCard>,
+            loader: () => fetch('/data.json'),
+        },
+        {
+            path: "/details/:id",
+            element: <AllClassesDetails></AllClassesDetails>,
             loader: () => fetch('/data.json'),
         },
         {
