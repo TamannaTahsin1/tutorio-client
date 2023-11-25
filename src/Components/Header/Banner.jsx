@@ -14,6 +14,9 @@ import ban1 from '../../assets/img/banner1.jpg'
 import ban2 from '../../assets/img/banner2.jpg'
 import ban3 from '../../assets/img/banner3.jpg'
 import ban4 from '../../assets/img/banner4.jpg'
+import ban5 from '../../assets/img/banner5.jpg'
+import ban6 from '../../assets/img/banner6.jpg'
+import ban7 from '../../assets/img/banner7.jpg'
 
 const Banner = () => {
     return (
@@ -43,6 +46,15 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <img src={ban4} className='h-[700px] w-full bg-slate-300 opacity-30' alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src={ban5} className='h-[700px] w-full bg-slate-300 opacity-30' alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src={ban6} className='h-[700px] w-full bg-slate-300 opacity-30' alt="" />
+        </SwiperSlide>
+        <SwiperSlide>
+        <img src={ban7} className='h-[700px] w-full bg-slate-300 opacity-30' alt="" />
         </SwiperSlide>
       </Swiper>
         </div>

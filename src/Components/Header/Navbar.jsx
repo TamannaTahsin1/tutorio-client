@@ -1,4 +1,4 @@
-/** @format */
+import logo from '../../assets/img/logo.png'
 
 import { Link, NavLink } from "react-router-dom";
 
@@ -12,7 +12,7 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-white font-bold bg-yellow-500"
+              ? "text-white font-bold bg-blue-300"
               : ""
           }>
           Home
@@ -25,7 +25,7 @@ const Navbar = () => {
             isPending
               ? "pending"
               : isActive
-              ? "text-white font-bold bg-yellow-500"
+              ? "text-white font-bold  bg-blue-300"
               : ""
           }>
           All Classes
@@ -58,7 +58,14 @@ const Navbar = () => {
                 {navLinks}
           </ul>
         </div>
-        <a className='btn btn-ghost text-xl'>Tutorio</a>
+        <div className='flex items-center justify-around'>
+            <div>
+              <img src={logo} alt='' className='w-16 h-16' />
+            </div>
+            <a className='btn btn-ghost normal-case text-2xl font-extrabold bg-gradient-to-r from-red-600 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
+              Tutorio
+            </a>
+          </div>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul className='menu menu-horizontal px-1'>

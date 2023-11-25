@@ -1,6 +1,4 @@
 
-
-// eslint-disable-next-line react/prop-types
 const AllClassesCard = ({allClass}) => {
     const {image ,name, title, short_description, total_enrollment, price} = allClass || {}
     return (

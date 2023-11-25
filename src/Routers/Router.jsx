@@ -6,6 +6,7 @@ import Register from "../Pages/Register/Register";
 import AllClasses from "../Pages/AllClasses/AllClasses";
 import AllClassesCard from "../Pages/AllClasses/AllClassesCard";
 import Partners from "../Pages/Home/Partners/Partners";
+import Classes from "../Pages/Classes/Classes";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
+
         },
         {
             path: "/classes",
@@ -33,7 +35,10 @@ const router = createBrowserRouter([
         {
             path: "/partners",
             element: <Partners></Partners>,
-            loader: () => fetch('/partners.json'),
+        },
+        {
+            path: "/class",
+            element: <Classes></Classes>,
         },
         {
             path: "/register",

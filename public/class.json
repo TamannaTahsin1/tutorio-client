@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "title": "Introduction to Computer Science",
+        "name": "CS101",
+        "image": "https://i.ibb.co/JtghC2J/html-system-website-concept-23-2150376770.jpg",
+        "price": 49.99,
+        "short_description": "Learn the fundamentals of computer science.",
+        "total_enrollment": 120
+      },
+      {
+        "id": 2,
+        "title": "Web Development Boot camp",
+        "name": "WD200",
+        "image": "https://i.ibb.co/z2wpwy6/web-development-concept-isometric-landing-page-team-develops-optimizes-layout-site-9209-7568.jpg",
+        "price": 79.99,
+        "short_description": "Master the art of building modern websites.",
+        "total_enrollment": 90
+      },
+      {
+        "id": 3,
+        "title": "Data Science Essentials",
+        "name": "DS300",
+        "image": "https://i.ibb.co/0mXVMmV/data-science-concept-blue-backgroundmachine-learning-big-data-database-classification-simple-icons-1.jpg",
+        "price": 99.99,
+        "short_description": "Explore the world of data analysis and machine learning.",
+        "total_enrollment": 75
+      },
+      {
+        "id": 4,
+        "title": "Graphic Design Fundamentals",
+        "name": "GD150",
+        "image": "https://i.ibb.co/tcVt0KS/design-word-cloud-innovation-idea-creativity-design-concept-505353-280.jpg",
+        "price": 59.99,
+        "short_description": "Unlock your creativity with the basics of graphic design.",
+        "total_enrollment": 105
+      },
+      {
+        "id": 5,
+        "title": "Photography Workshop",
+        "name": "PH200",
+        "image": "https://i.ibb.co/3rWw5M7/vertical-poster-template-photographer-career-hobby-23-2150306814.jpg",
+        "price": 69.99,
+        "short_description": "Capture stunning moments with the art of photography.",
+        "total_enrollment": 80
+      },
+      {
+        "id": 6,
+        "title": "Business Management Principles",
+        "name": "BM250",
+        "image": "https://i.ibb.co/94r2nc5/business-development-startup-growth-statistics-concept-53876-147951.jpg",
+        "price": 89.99,
+        "short_description": "Develop essential skills for effective business leadership.",
+        "total_enrollment": 110
+      },
+      {
+        "id": 7,
+        "title": "Digital Marketing Strategies",
+        "name": "DM180",
+        "image": "https://i.ibb.co/MpyPymj/content-marketing-data-blogging-media-publication-information-vision-content-concept-36325-4594.jpg",
+        "price": 79.99,
+        "short_description": "Learn to promote products and services in the digital age.",
+        "total_enrollment": 95
+      },
+      {
+        "id": 8,
+        "title": "Spanish Language Basics",
+        "name": "SLB120",
+        "image": "https://i.ibb.co/1MR16V4/learn-spanish-language-online-education-concept-53876-132596.jpg",
+        "price": 54.99,
+        "short_description": "Get started with the basics of the Spanish language.",
+        "total_enrollment": 65
+      }
+]
