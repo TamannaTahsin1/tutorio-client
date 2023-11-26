@@ -10,6 +10,8 @@ import Classes from "../Pages/Classes/Classes";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import AllClassesDetails from "../Pages/AllClasses/AllClassesDetails";
 import PrivateRoute from "./PrivateRoute";
+import Dashboard from "../Layout/Dashboard";
+import Cart from "../Pages/Dashboard/Cart/Cart";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +56,16 @@ const router = createBrowserRouter([
         },
     ]
   },
+  {
+    path:'dashboard',
+    element:<Dashboard></Dashboard>,
+    children:[
+        {
+            path:'cart',
+            element:<Cart></Cart>,
+        }
+    ]
+  }
 ]);
 
 export default router;
