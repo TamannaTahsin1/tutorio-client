@@ -1,14 +1,18 @@
 /** @format */
 
-import { useContext, useState } from "react";
+import { useState } from "react";
 import toast from "react-hot-toast";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Swal from "sweetalert2";
-import { AuthContext } from "../../Providers/AuthProvider";
+import useAuth from "../../Hooks/useAuth";
+import useAxiosPublic from "../../Hooks/useAxiosPublic";
+
 
 const Register = () => {
-    const {createUser, updateUserProfile} = useContext(AuthContext)
-    // error
+  const axiosPublic = useAxiosPublic()
+  const { createUser, updateUserProfile } = useAuth();
+  const navigate = useNavigate();
+  // error
   // error
   const [registerError, setRegisterError] = useState("");
   const [registerSuccess, setRegisterSuccess] = useState("");
@@ -37,17 +41,29 @@ const Register = () => {
     // create user
     createUser(email, password)
       .then((result) => {
-        const loggedUser =result.user
-      console.log(loggedUser);
-      updateUserProfile(e.name, e.photoURL).then(() =>{
-        console.log('User Profile Updated')
-      }).catch(error=> console.log(error))
-        Swal.fire({
-          title: "Success!",
-          text: "User Created Successfully!",
-          icon: "success",
-          confirmButtonText: "Cool",
-        });
+        const loggedUser = result.user;
+        console.log(loggedUser);
+        updateUserProfile(e.name, e.photoURL)
+          .then(() => {
+            // create user entry in the database
+            const userInfo = {
+              name: name,
+              email: email
+            }
+            axiosPublic.post('/users',userInfo).then(res=>{
+              if(res.data.insertedId){
+                console.log('user added to db')
+                Swal.fire({
+                  title: "Success!",
+                  text: "User Created Successfully!",
+                  icon: "success",
+                  confirmButtonText: "Cool",
+                });
+                navigate("/");
+              }
+            })
+          })
+          // .catch((error) => console.log(error));
       })
       .catch((error) => {
         console.error(error);
