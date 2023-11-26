@@ -24,21 +24,17 @@ const router = createBrowserRouter([
         {
             path: "/classes",
             element: <AllClasses></AllClasses>,
-            loader: () => fetch('/data.json'),
+            loader: () => fetch('http://localhost:5000/classes'),
         },
         {
             path: "/classes",
             element: <AllClassesCard></AllClassesCard>,
-            loader: () => fetch('/data.json'),
+            loader: () => fetch('http://localhost:5000/classes'),
         },
         {
-            path: "/details/:id",
+            path: "/details/:_id",
             element: <AllClassesDetails></AllClassesDetails>,
-            loader: () => fetch('/data.json'),
-        },
-        {
-            path: "/login",
-            element: <Login></Login>,
+            loader: () => fetch('http://localhost:5000/classes'),
         },
         {
             path: "/partners",
@@ -47,6 +43,10 @@ const router = createBrowserRouter([
         {
             path: "/class",
             element: <Classes></Classes>,
+        },
+        {
+            path: "/login",
+            element: <Login></Login>,
         },
         {
             path: "/register",
