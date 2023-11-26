@@ -12,6 +12,7 @@ import AllClassesDetails from "../Pages/AllClasses/AllClassesDetails";
 import PrivateRoute from "./PrivateRoute";
 import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
+import Teach from "../Pages/Teach/Teach";
 
 const router = createBrowserRouter([
   {
@@ -37,6 +38,10 @@ const router = createBrowserRouter([
             path: "/details/:_id",
             element: <PrivateRoute><AllClassesDetails></AllClassesDetails></PrivateRoute>,
             loader: () => fetch('http://localhost:5000/classes'),
+        },
+        {
+            path: "/teach",
+            element: <Teach></Teach>,
         },
         {
             path: "/partners",
