@@ -1,10 +1,12 @@
 import logo from "../assets/img/logo.png";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaListUl, FaBook } from "react-icons/fa";
+import { FaHome, FaShoppingCart, FaListUl, FaBook, FaUser } from "react-icons/fa";
 import useCart from "../Hooks/useCart";
 
 const Dashboard = () => {
   const [cart] = useCart();
+
+  const isAdmin = true;
   return (
     <div>
       <div className='flex'>
@@ -18,8 +20,55 @@ const Dashboard = () => {
               Tutorio
             </a>
           </div>
-          <ul className='menu'>
+          <ul className='menu p-4'>
+            {
+              isAdmin ? <>
+              <li className='font-semibold text-lg'>
+              <NavLink
+                to='/dashboard/adminHome'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white  text-base bg-orange-400"
+                    : ""
+                }>
+                <FaHome></FaHome>
+                Admin Home
+              </NavLink>
+            </li>
             <li className='font-semibold text-lg'>
+              <NavLink
+                to='/dashboard/manageClasses'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white text-base bg-orange-400"
+                    : ""
+                }>
+                <FaShoppingCart />
+                Manage Classes
+              </NavLink>
+            </li>
+            <li className='font-semibold text-lg'>
+              <NavLink
+                to='/dashboard/users'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white text-base bg-orange-400"
+                    : ""
+                }>
+                <FaUser/>
+                All Users
+              </NavLink>
+            </li>
+              </>
+              :
+              <>
+              <li className='font-semibold text-lg'>
               <NavLink
                 to='/dashboard/userHome'
                 className={({ isActive, isPending }) =>
@@ -61,6 +110,9 @@ const Dashboard = () => {
                 My Class List
               </NavLink>
             </li>
+              </>
+            }
+            {/* shared nav links */}
             <div className='divider text-black'></div>
             <li className='font-semibold text-lg'>
               <NavLink
