@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 import { AuthContext } from "../../Providers/AuthProvider";
 
 const Register = () => {
-    const {createUser} = useContext(AuthContext)
+    const {createUser, updateUserProfile} = useContext(AuthContext)
     // error
   // error
   const [registerError, setRegisterError] = useState("");
@@ -39,6 +39,9 @@ const Register = () => {
       .then((result) => {
         const loggedUser =result.user
       console.log(loggedUser);
+      updateUserProfile(e.name, e.photoURL).then(() =>{
+        console.log('User Profile Updated')
+      }).catch(error=> console.log(error))
         Swal.fire({
           title: "Success!",
           text: "User Created Successfully!",

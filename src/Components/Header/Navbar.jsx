@@ -40,6 +40,21 @@ const Navbar = () => {
           All Classes
         </NavLink>
       </li>
+      <li className='font-bold'>
+        <NavLink
+          to='/'
+          className={({ isActive, isPending }) =>
+            isPending
+              ? "pending"
+              : isActive
+              ? "text-white font-bold  bg-blue-300"
+              : ""
+          }>
+  My Classes
+  <div className="badge badge-secondary">+99</div>
+
+        </NavLink>
+      </li>
     </>
   );
   return (
