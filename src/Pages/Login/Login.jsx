@@ -1,15 +1,37 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Providers/AuthProvider";
+import toast from "react-hot-toast";
 // import SocialLogin from "./SocialLogin";
 
 
+
 const Login = () => {
+    const {logIn} = useContext(AuthContext)
     const handleLogin = e =>{
         e.preventDefault()
         const form = new FormData(e.currentTarget)
         const email = form.get('email')
         const password = form.get('password')
         console.log(email, password)
-    }
+            // create user
+    logIn(email, password)
+    .then(result =>{
+      const user =result.user;
+      console.log(user)
+      const loggedInUser =result.user
+      console.log(loggedInUser);
+      toast.success('Successfully Logged in!',
+      {
+        icon: '👏',
+        style: {
+          borderRadius: '10px',
+          background: '#333',
+          color: '#fff',
+        },
+      })
+    })
+}
     return (
         <div className='hero min-h-screen bg-base-200'>
         <div className='hero-content flex-col lg:flex-row-reverse'>
@@ -54,7 +76,7 @@ const Login = () => {
                   Register
                 </Link>
               </p>
-              <SocialLogin></SocialLogin>
+              {/* <SocialLogin></SocialLogin> */}
             </form>
           </div>
         </div>
