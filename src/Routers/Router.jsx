@@ -9,6 +9,7 @@ import Partners from "../Pages/Home/Partners/Partners";
 import Classes from "../Pages/Classes/Classes";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import AllClassesDetails from "../Pages/AllClasses/AllClassesDetails";
+import PrivateRoute from "./PrivateRoute";
 
 const router = createBrowserRouter([
   {
@@ -19,21 +20,20 @@ const router = createBrowserRouter([
         {
             path: "/",
             element: <Home></Home>,
-
         },
         {
             path: "/classes",
-            element: <AllClasses></AllClasses>,
+            element: <PrivateRoute><AllClasses></AllClasses></PrivateRoute>,
             loader: () => fetch('http://localhost:5000/classes'),
         },
         {
             path: "/classes",
-            element: <AllClassesCard></AllClassesCard>,
+            element: <PrivateRoute><AllClassesCard></AllClassesCard></PrivateRoute>,
             loader: () => fetch('http://localhost:5000/classes'),
         },
         {
             path: "/details/:_id",
-            element: <AllClassesDetails></AllClassesDetails>,
+            element: <PrivateRoute><AllClassesDetails></AllClassesDetails></PrivateRoute>,
             loader: () => fetch('http://localhost:5000/classes'),
         },
         {

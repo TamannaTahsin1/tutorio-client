@@ -37,7 +37,8 @@ const Register = () => {
     // create user
     createUser(email, password)
       .then((result) => {
-        console.log(result.user);
+        const loggedUser =result.user
+      console.log(loggedUser);
         Swal.fire({
           title: "Success!",
           text: "User Created Successfully!",

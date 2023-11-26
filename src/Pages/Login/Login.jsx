@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import toast from "react-hot-toast";
 // import SocialLogin from "./SocialLogin";
@@ -7,7 +7,10 @@ import toast from "react-hot-toast";
 
 
 const Login = () => {
-    const {logIn} = useContext(AuthContext)
+    const {logIn} = useContext(AuthContext);
+    const navigate = useNavigate()
+    const location = useLocation()
+    const from = location.state?.from?.pathname || '/';
     const handleLogin = e =>{
         e.preventDefault()
         const form = new FormData(e.currentTarget)
@@ -30,6 +33,7 @@ const Login = () => {
           color: '#fff',
         },
       })
+      navigate(from,{replace:true})
     })
 }
     return (
