@@ -3,9 +3,11 @@ import logo from '../../assets/img/logo.png'
 
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from '../../Providers/AuthProvider';
+import useCart from '../../Hooks/useCart';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+  const [cart] = useCart()
   // for logout
   const handleLogOut = () => {
     logOut()
@@ -51,7 +53,7 @@ const Navbar = () => {
               : ""
           }>
   My Classes
-  <div className="badge badge-secondary">+99</div>
+  <div className="badge badge-secondary">+{cart.length}</div>
 
         </NavLink>
       </li>

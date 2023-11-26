@@ -4,6 +4,9 @@
 import { useLocation, useNavigate } from "react-router-dom";
 import useAuth from "../../Hooks/useAuth";
 import Swal from "sweetalert2";
+import toast from "react-hot-toast";
+import useAxiosSecure from "../../Hooks/useAxiosSecure";
+import useCart from "../../Hooks/useCart";
 
 
 
@@ -12,18 +15,28 @@ const DetailsCard = ({ classes }) => {
   const {user} = useAuth()
   const navigate = useNavigate()
   const location = useLocation()
+  const axiosSecure = useAxiosSecure()
+  const [, refetch] = useCart();
   // add to cart
-  const handleAddToCart = classesName => {
+  const handleAddToCart = () => {
     if(user && user.email){
       // send cart item to the database
-      console.log(user.email, classesName)
+      
       const cartItem = {
         classId: _id,
         email: user.email,
-        name,
+        title,
         image,
         price
       }
+      axiosSecure.post('/carts', cartItem).then(res=>{
+        console.log(res.data)
+        if(res.data.insertedId){
+          toast.success(`${title}Successfully Added!`)
+        }
+        // refetch the cart
+        refetch()
+      })
     }
     else{
       Swal.fire({
