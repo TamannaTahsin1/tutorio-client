@@ -83,6 +83,10 @@ const Cart = () => {
                     className='btn btn-ghost btn-lg text-red-600'>
                     <FaTrashAlt />
                   </button>
+                  <button                   
+                    className='btn btn-ghost btn-lg text-blue-600'>
+                    continue
+                  </button>
                 </th>
               </tr>
             ))}

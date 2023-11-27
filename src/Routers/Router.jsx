@@ -14,8 +14,9 @@ import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
 import Teach from "../Pages/Teach/Teach";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
-import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
 import AdminRoute from "./AdminRoute";
+import UserProfile from "../Pages/Dashboard/UserProfile/UserProfile";
+import TeacherReq from "../Pages/Dashboard/TeacherReq/TeacherReq";
 
 const router = createBrowserRouter([
   {
@@ -73,14 +74,19 @@ const router = createBrowserRouter([
             path:'cart',
             element:<Cart></Cart>,
         },
-        // admin routes
         {
-            path:'addClasses',
-            element:<AdminRoute><AddClasses></AddClasses></AdminRoute>,
+            path:'profile',
+            element:<UserProfile></UserProfile>,
         },
+        // admin routes
         {
             path:'users',
             element:<AdminRoute><AllUsers></AllUsers></AdminRoute>,
+        },
+        {
+            path:'teacherReq',
+            element:<AdminRoute><TeacherReq></TeacherReq></AdminRoute>,
+            loader: () => fetch('http://localhost:5000/teach')
         }
     ]
   }

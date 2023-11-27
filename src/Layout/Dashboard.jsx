@@ -36,12 +36,12 @@ const Dashboard = () => {
                     : ""
                 }>
                 <FaHome></FaHome>
-                Admin Home
+                Admin Profile
               </NavLink>
             </li>
             <li className='font-semibold text-lg'>
               <NavLink
-                to='/dashboard/manageClasses'
+                to='/dashboard/teacherReq'
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
@@ -50,21 +50,7 @@ const Dashboard = () => {
                     : ""
                 }>
                 <FaShoppingCart />
-                Manage Classes
-              </NavLink>
-            </li>
-            <li className='font-semibold text-lg'>
-              <NavLink
-                to='/dashboard/addClasses'
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-white text-base bg-orange-400"
-                    : ""
-                }>
-                <FaShoppingCart />
-                Add Classes
+                Teacher Request
               </NavLink>
             </li>
             <li className='font-semibold text-lg'>
@@ -86,7 +72,7 @@ const Dashboard = () => {
               <>
               <li className='font-semibold text-lg'>
               <NavLink
-                to='/dashboard/userHome'
+                to='/dashboard/profile'
                 className={({ isActive, isPending }) =>
                   isPending
                     ? "pending"
@@ -95,7 +81,7 @@ const Dashboard = () => {
                     : ""
                 }>
                 <FaHome></FaHome>
-                User Home
+                My Profile
               </NavLink>
             </li>
             <li className='font-semibold text-lg'>

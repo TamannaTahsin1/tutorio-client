@@ -1,6 +1,42 @@
+import Swal from "sweetalert2";
+
 const Teach = () => {
     const handleAddTeacher = (e) => {
         e.preventDefault();
+        const form  = e.target;
+        const name= form.name.value;
+        const email= form.email.value;
+        const title= form.title.value;
+        const image= form.image.value;
+        const description= form.description.value;
+        const experience= form.experience.value;
+        const category= form.category.value;
+        const price= form.price.value;
+
+
+        const newTeacher = {name,email,title,image,description,price, experience, category}
+        console.log(newTeacher)
+        // send data to the server
+        fetch('http://localhost:5000/teach',{
+          method:'POST',
+          headers:{
+            'content-type': 'application/json'
+          },
+          body: JSON.stringify(newTeacher)
+        })
+        .then(res => res.json())
+        .then(data =>{
+          console.log(data)
+          if(data.insertedId){
+            Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Applied Successfully",
+              showConfirmButton: false,
+              timer: 1500
+            });
+          }
+        })
     }
     return (
         <div>
@@ -98,6 +134,36 @@ const Teach = () => {
                       name='price'
                       type='text'
                       placeholder='price'
+                      className='input input-bordered w-full'
+                    />
+                  </label>
+                </div>
+              </div>
+              {/* form details and price row */}
+              <div className='md:flex gap-3 mb-5'>
+                <div className='form-control md:w-1/2'>
+                  <label className='label'>
+                    <span className='label-text'>Experience</span>
+                  </label>
+                  <label className='input-group'>
+                    <input
+                      name='experience'
+                      type='text'
+                      defaultValue={status}
+                      placeholder='experience'
+                      className='input input-bordered w-full'
+                    />
+                  </label>
+                </div>
+                <div className='form-control md:w-1/2'>
+                  <label className='label'>
+                    <span className='label-text'>Category</span>
+                  </label>
+                  <label className='input-group'>
+                    <input
+                      name='category'
+                      type='text'
+                      placeholder='Category'
                       className='input input-bordered w-full'
                     />
                   </label>
