@@ -4,7 +4,6 @@ import Home from "../Pages/Home/Home";
 import Login from "../Pages/Login/Login";
 import Register from "../Pages/Register/Register";
 import AllClasses from "../Pages/AllClasses/AllClasses";
-import AllClassesCard from "../Pages/AllClasses/AllClassesCard";
 import Partners from "../Pages/Home/Partners/Partners";
 import Classes from "../Pages/Classes/Classes";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
@@ -18,6 +17,7 @@ import AdminRoute from "./AdminRoute";
 import UserProfile from "../Pages/Dashboard/UserProfile/UserProfile";
 import TeacherReq from "../Pages/Dashboard/TeacherReq/TeacherReq";
 import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
+import SomeClasses from "../Pages/Home/SomeClasses/SomeClasses";
 
 const router = createBrowserRouter([
   {
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
             loader: () => fetch('http://localhost:5000/classes'),
         },
         {
-            path: "/classes",
-            element: <PrivateRoute><AllClassesCard></AllClassesCard></PrivateRoute>,
+            path: "/someClasses",
+            element: <SomeClasses></SomeClasses>,
             loader: () => fetch('http://localhost:5000/classes'),
         },
         {

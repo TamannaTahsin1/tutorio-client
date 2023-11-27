@@ -5,7 +5,7 @@ const AllClassesCard = ({ allClass }) => {
     allClass || {};
   return (
     <div>
-      <div className='card w-80 h-[500px]  bg-base-100 shadow-xl text-white'>
+      <div className='card w-96 h-[500px]  bg-base-100 shadow-xl text-white'>
         <figure className='px-10 pt-10'>
           <img src={image} alt={name} className='rounded-xl w-full h-60' />
         </figure>

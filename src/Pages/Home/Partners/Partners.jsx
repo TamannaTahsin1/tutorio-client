@@ -13,7 +13,7 @@ import img10 from "../../../assets/img/10.png";
 const Partners = () => {
   return (
     <div>
-      <h1 className='text-center text-4xl mt-12 font-extrabold bg-gradient-to-r from-indigo-500 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
+      <h1 className='text-center text-4xl mt-20 font-extrabold bg-gradient-to-r from-indigo-500 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
         Collaborators
       </h1>
 

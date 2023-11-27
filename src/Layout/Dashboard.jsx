@@ -1,6 +1,6 @@
 import logo from "../assets/img/logo.png";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaListUl, FaBook, FaUser } from "react-icons/fa";
+import { FaHome, FaShoppingCart, FaBook, FaUser } from "react-icons/fa";
 import useCart from "../Hooks/useCart";
 import useAdmin from "../Hooks/useAdmin";
 
@@ -110,20 +110,6 @@ const Dashboard = () => {
                 }>
                 <FaShoppingCart />
                 My Cart ({cart.length})
-              </NavLink>
-            </li>
-            <li className='font-semibold text-lg'>
-              <NavLink
-                to='/dashboard/bookings'
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-white text-base bg-orange-400"
-                    : ""
-                }>
-                <FaListUl />
-                My Class List
               </NavLink>
             </li>
               </>

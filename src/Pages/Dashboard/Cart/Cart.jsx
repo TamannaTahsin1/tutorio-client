@@ -2,6 +2,7 @@ import { FaTrashAlt } from "react-icons/fa";
 import useCart from "../../../Hooks/useCart";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
+import { Helmet } from "react-helmet";
 
 const Cart = () => {
   const [cart, refetch] = useCart();
@@ -36,6 +37,9 @@ const Cart = () => {
 
   return (
     <div className='my-10'>
+                 <Helmet>
+        <title>Tutorio | Cart</title>
+      </Helmet>
       <div>
         <h2 className="text-center text-4xl text-orange-600 font-bold">My Enrolled Classes</h2>
       </div>

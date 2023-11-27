@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import TeachReqDetails from "./TeachReqDetails";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet";
 
 const TeacherReq = () => {
   //   const teacherReqs = useLoaderData();
@@ -79,7 +80,9 @@ const TeacherReq = () => {
   };
 
   return (
-    <div>
+    <div>           <Helmet>
+    <title>Tutorio | Applicants</title>
+  </Helmet>
       <h2 className='text-center text-4xl text-orange-600 font-bold p-5'>
         Manage Applicants
       </h2>

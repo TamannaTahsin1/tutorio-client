@@ -7,6 +7,7 @@ import CheckOut from "./CheckOut/CheckOut";
 // import Footer from "../Footer/Footer";
 import Partners from "./Partners/Partners";
 import Instructor from "./Instructor/Instructor";
+import SomeClasses from "./SomeClasses/SomeClasses";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       <Banner></Banner>
       <Classes></Classes>
       <Instructor></Instructor>
+      <SomeClasses></SomeClasses>
       <Partners></Partners>
       <CheckOut></CheckOut>
       {/* <Footer></Footer> */}

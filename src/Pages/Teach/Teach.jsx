@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import Swal from "sweetalert2";
 
 const Teach = () => {
@@ -40,6 +41,9 @@ const Teach = () => {
     }
     return (
         <div>
+                     <Helmet>
+        <title>Tutorio | Apply Form</title>
+      </Helmet>
         <div
           className='container mx-auto mt-20'
           data-aos='fade-up'
