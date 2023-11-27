@@ -110,7 +110,7 @@ const Teach = () => {
                 </div>
               </div>
               {/* form details and price row */}
-              <div className='md:flex gap-3 mb-5'>
+              <div className='md:flex gap-3'>
                 <div className='form-control md:w-1/2'>
                   <label className='label'>
                     <span className='label-text'>About Subject</span>

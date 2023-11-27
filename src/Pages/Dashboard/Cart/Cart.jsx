@@ -37,8 +37,8 @@ const Cart = () => {
   return (
     <div className='my-10'>
       <div className='text-2xl flex justify-evenly my-10 '>
-        <h2>Total Classes:{cart.length}</h2>
-        <h2>Total Price:{totalPrice}</h2>
+        <h2>Total Classes: {cart.length}</h2>
+        <h2>Total Price: ${totalPrice}</h2>
         <button className='btn bg-orange-400 text-white'>Pay now</button>
       </div>
       {/* table*/}
@@ -76,16 +76,12 @@ const Cart = () => {
                   {item.title}
                   <br />
                 </td>
-                <td>{item.price}</td>
+                <td>${item.price}</td>
                 <th>
                   <button
                     onClick={() => handleDelete(item._id)}
                     className='btn btn-ghost btn-lg text-red-600'>
                     <FaTrashAlt />
-                  </button>
-                  <button                   
-                    className='btn btn-ghost btn-lg text-blue-600'>
-                    continue
                   </button>
                 </th>
               </tr>
