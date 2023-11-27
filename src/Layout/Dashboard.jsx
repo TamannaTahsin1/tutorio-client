@@ -8,7 +8,7 @@ import useAdmin from "../Hooks/useAdmin";
 const Dashboard = () => {
   const [cart] = useCart();
 
-  const [isAdmin] = useAdmin;
+  const [isAdmin] = useAdmin();
   return (
     <div>
       <div className='flex'>
@@ -51,6 +51,20 @@ const Dashboard = () => {
                 }>
                 <FaShoppingCart />
                 Manage Classes
+              </NavLink>
+            </li>
+            <li className='font-semibold text-lg'>
+              <NavLink
+                to='/dashboard/addClasses'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white text-base bg-orange-400"
+                    : ""
+                }>
+                <FaShoppingCart />
+                Add Classes
               </NavLink>
             </li>
             <li className='font-semibold text-lg'>
@@ -141,7 +155,7 @@ const Dashboard = () => {
                     : ""
                 }>
                 <FaBook />
-                Add Classes
+                All Classes
               </NavLink>
             </li>
           </ul>

@@ -14,6 +14,8 @@ import Dashboard from "../Layout/Dashboard";
 import Cart from "../Pages/Dashboard/Cart/Cart";
 import Teach from "../Pages/Teach/Teach";
 import AllUsers from "../Pages/Dashboard/AllUsers/AllUsers";
+import AddClasses from "../Pages/Dashboard/AddClasses/AddClasses";
+import AdminRoute from "./AdminRoute";
 
 const router = createBrowserRouter([
   {
@@ -66,14 +68,19 @@ const router = createBrowserRouter([
     path:'dashboard',
     element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
     children:[
+        // all user routes
         {
             path:'cart',
             element:<Cart></Cart>,
         },
         // admin routes
         {
+            path:'addClasses',
+            element:<AdminRoute><AddClasses></AddClasses></AdminRoute>,
+        },
+        {
             path:'users',
-            element:<AllUsers></AllUsers>,
+            element:<AdminRoute><AllUsers></AllUsers></AdminRoute>,
         }
     ]
   }
