@@ -38,17 +38,17 @@ export default function Footer() {
         <IconButton
           variant="soft"
           size="sm"
-          onClick={() => {
-            const colors: ColorPaletteProp[] = [
-              'primary',
-              'neutral',
-              'danger',
-              'success',
-              'warning',
-            ];
-            const nextColorIndex = colors.indexOf(color) + 1;
-            setColor(colors[nextColorIndex] ?? colors[0]);
-          }}
+          // onClick={() => {
+          //   const colors: ColorPaletteProp[] = [
+          //     'primary',
+          //     'neutral',
+          //     'danger',
+          //     'success',
+          //     'warning',
+          //   ];
+          //   const nextColorIndex = colors.indexOf(color) + 1;
+          //   setColor(colors[nextColorIndex] ?? colors[0]);
+          // }}
         >
           <ColorLensRoundedIcon fontSize="small" />
         </IconButton>

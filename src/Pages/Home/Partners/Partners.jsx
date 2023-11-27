@@ -13,48 +13,48 @@ import img10 from "../../../assets/img/10.png";
 const Partners = () => {
   return (
     <div>
-      <h1 className='text-center text-4xl mt-12 mb-20 font-extrabold bg-gradient-to-r from-indigo-500 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
+      <h1 className='text-center text-4xl mt-12 font-extrabold bg-gradient-to-r from-indigo-500 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
         Collaborators
       </h1>
 
       <div>
         <Marquee speed={150}>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img1} alt='logos' className='rounded-xl w-32' />
           </figure>
 
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img2} alt='logos' className='rounded-xl w-32' />
           </figure>
 
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img3} alt='logos' className='rounded-xl w-52' />
           </figure>
 
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img4} alt='logos' className='rounded-xl w-24' />
           </figure>
 
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img5} alt='logos' className='rounded-xl w-32' />
           </figure>
 
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img6} alt='logos' className='rounded-xl w-32' />
           </figure>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img7} alt='logos' className='rounded-xl w-52' />
           </figure>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img8} alt='logos' className='rounded-xl w-32' />
           </figure>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img9} alt='logos' className='rounded-xl w-32' />
           </figure>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img10} alt='logos' className='rounded-xl w-32' />
           </figure>
-          <figure className='px-10 pt-10'>
+          <figure className='px-10'>
             <img src={img6} alt='logos' className='rounded-xl w-32' />
           </figure>
         </Marquee>

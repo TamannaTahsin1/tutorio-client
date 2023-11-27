@@ -6,6 +6,7 @@ import Classes from "../Classes/Classes";
 import CheckOut from "./CheckOut/CheckOut";
 // import Footer from "../Footer/Footer";
 import Partners from "./Partners/Partners";
+import Instructor from "./Instructor/Instructor";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       </Helmet>
       <Banner></Banner>
       <Classes></Classes>
+      <Instructor></Instructor>
       <Partners></Partners>
       <CheckOut></CheckOut>
       {/* <Footer></Footer> */}

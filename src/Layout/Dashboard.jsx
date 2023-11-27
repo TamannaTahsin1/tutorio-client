@@ -55,6 +55,20 @@ const Dashboard = () => {
             </li>
             <li className='font-semibold text-lg'>
               <NavLink
+                to='/dashboard/manageClasses'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white text-base bg-orange-400"
+                    : ""
+                }>
+                <FaShoppingCart />
+                All Classes
+              </NavLink>
+            </li>
+            <li className='font-semibold text-lg'>
+              <NavLink
                 to='/dashboard/users'
                 className={({ isActive, isPending }) =>
                   isPending

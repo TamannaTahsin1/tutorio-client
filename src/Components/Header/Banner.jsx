@@ -36,35 +36,55 @@ const Banner = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-        <img src={ban1} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
-        <p className='text-center text-6xl font-extrabold -mt-96'>Learn Development</p>
-        <p className='mt-2 text-center text-gray-500 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <img src={ban1} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold '>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
-        <button className='btn btn-primary text-white'>Browse Courses</button>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
         </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban2} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
-         <p className='text-center text-6xl font-extrabold -mt-96'>Learn Development</p>
-        <p className='mt-2 text-center text-gray-500 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <img src={ban2} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+         <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400 '>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
-        <button className='btn btn-primary text-white'>Browse Courses</button>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
         </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban3} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
+        <img src={ban3} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <div className='flex justify-center items-center'>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
+        </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban4} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
+        <img src={ban4} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <div className='flex justify-center items-center'>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
+        </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban5} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
+        <img src={ban5} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <div className='flex justify-center items-center'>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
+        </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban6} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
+        <img src={ban6} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
+        <div className='flex justify-center items-center'>
+        <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
+        </div>
         </SwiperSlide>
         <SwiperSlide>
-        <img src={ban7} className='h-[700px] w-full bg-slate-200 opacity-10' alt="" />
+        <img src={ban7} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />    
         </SwiperSlide>
       </Swiper>
         </div>

@@ -36,6 +36,9 @@ const Cart = () => {
 
   return (
     <div className='my-10'>
+      <div>
+        <h2 className="text-center text-4xl text-orange-600 font-bold">My Enrolled Classes</h2>
+      </div>
       <div className='text-2xl flex justify-evenly my-10 '>
         <h2>Total Classes: {cart.length}</h2>
         <h2>Total Price: ${totalPrice}</h2>
