@@ -2,11 +2,13 @@ import logo from "../assets/img/logo.png";
 import { NavLink, Outlet } from "react-router-dom";
 import { FaHome, FaShoppingCart, FaListUl, FaBook, FaUser } from "react-icons/fa";
 import useCart from "../Hooks/useCart";
+import useAdmin from "../Hooks/useAdmin";
+
 
 const Dashboard = () => {
   const [cart] = useCart();
 
-  const isAdmin = true;
+  const [isAdmin] = useAdmin;
   return (
     <div>
       <div className='flex'>
