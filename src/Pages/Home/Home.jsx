@@ -1,17 +1,15 @@
-/** @format */
-
 import { Helmet } from "react-helmet";
 import Banner from "../../Components/Header/Banner";
 import Classes from "../Classes/Classes";
 import CheckOut from "./CheckOut/CheckOut";
-// import Footer from "../Footer/Footer";
+import Footer from "../Footer/Footer";
 import Partners from "./Partners/Partners";
 import Instructor from "./Instructor/Instructor";
 import SomeClasses from "./SomeClasses/SomeClasses";
 
 const Home = () => {
   return (
-    <div>
+    <div className="text-blue-500">
       <Helmet>
         <title>Tutorio | Home</title>
       </Helmet>
@@ -21,7 +19,7 @@ const Home = () => {
       <SomeClasses></SomeClasses>
       <Partners></Partners>
       <CheckOut></CheckOut>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 };

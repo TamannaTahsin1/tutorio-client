@@ -17,15 +17,32 @@ const AllUsers = () => {
     },
   });
   //   to make admin
-  const handleMakeAdmin = (user) => {
-    axiosSecure.patch(`/users/admin/${user._id}`).then((res) => {
+  // const handleMakeAdmin = (user) => {
+  //   axiosSecure.patch(`/users/admin/${user._id}`).then((res) => {
+  //     console.log(res.data);
+  //     if (res.data.modifiedCount > 0) {
+  //       refetch()
+  //       Swal.fire({
+  //         position: "top-end",
+  //         icon: "success",
+  //         title: `${user.name} is an Admin now!`,
+  //         showConfirmButton: false,
+  //         timer: 1500,
+  //       });
+  //     }
+  //   });
+  // };
+  
+  //   to make teacher
+  const handleMakeTeacher = (user) => {
+    axiosSecure.patch(`/users/teacher/${user._id}`).then((res) => {
       console.log(res.data);
       if (res.data.modifiedCount > 0) {
         refetch()
         Swal.fire({
           position: "top-end",
           icon: "success",
-          title: `${user.name} is an Admin now!`,
+          title: `${user.name} is a Teacher now!`,
           showConfirmButton: false,
           timer: 1500,
         });
@@ -87,10 +104,19 @@ const AllUsers = () => {
                 <th>{index + 1}</th>
                 <td>{user.name}</td>
                 <td>{user.email}</td>
-                <td>
+                {/* <td>
                   { user.role === 'admin' ? 'Admin' :
                     <button
                       onClick={() => handleMakeAdmin(user)}
+                      className='btn btn-ghost btn-lg text-yellow-600'>
+                      <FaUsers />
+                    </button>
+                  }
+                </td> */}
+                <td>
+                  { user.role === 'teacher' ? 'Teacher' :
+                    <button
+                      onClick={() => handleMakeTeacher(user)}
                       className='btn btn-ghost btn-lg text-yellow-600'>
                       <FaUsers />
                     </button>

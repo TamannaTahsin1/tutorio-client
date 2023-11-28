@@ -31,7 +31,7 @@ const SomeClasses = () => {
         <Link to='/classes'>
         <button
         onClick={() => setIsShow(!isShow)}
-            className='btn btn-outline text-blue-500 border-0 border-b-4 border-t-4'>
+            className='btn btn-outline text-pink-600 border-0 border-b-4 border-t-4'>
             {
                 isShow ? ' ' : 'See more'
             }

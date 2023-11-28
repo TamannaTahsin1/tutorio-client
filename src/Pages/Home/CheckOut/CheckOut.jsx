@@ -16,9 +16,9 @@ const CheckOut = () => {
              <img src={product} className="w-[350px] h-[350px]" alt="" />
              </div>
              <div className='text-left p-4'>
-                <p className='text-xl'>February 21,2023</p>
-                <p className='text-xl'>Our Most Popular Course</p>
-                <p className='text-gray-400'>Explore the cutting-edge world of Artificial Intelligence through our comprehensive  <br /> course, where you will delve into machine learning algorithms, neural networks, and <br /> advanced   AI applications. Gain hands-on experience in programming AI solutions and   <br />  understand the ethical considerations shaping this dynamic field.  Join us on a journey to master the skills that drive innovation in the age of Artificial Intelligence.</p>
+                <p className='text-xl text-green-500'>February 21,2023</p>
+                <p className='text-3xl text-blue-400 font-bold'>Our Most Popular Contest</p>
+                <p className='text-gray-500 font-semibold'>Explore the cutting-edge world of Artificial Intelligence through our comprehensive  <br /> course, where you will delve into machine learning algorithms, neural networks, and <br /> advanced   AI applications. Gain hands-on experience in programming AI solutions and   <br />  understand the ethical considerations shaping this dynamic field.  Join us on a journey to master the skills that drive innovation in the age of Artificial Intelligence.</p>
              </div>
             </div>
         </div>

@@ -94,6 +94,26 @@ const router = createBrowserRouter([
             loader: () => fetch('http://localhost:5000/teach')
         }
     ]
+  },
+  {
+    path:'teacherDashboard',
+    element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+    children:[
+        // all user routes
+        {
+            path:'cart',
+            element:<Cart></Cart>,
+        },
+        {
+            path:'profile',
+            element:<UserProfile></UserProfile>,
+        },
+        // admin routes
+        {
+            path:'manageClasses',
+            element:<ManageClasses></ManageClasses>,
+        },
+    ]
   }
 ]);
 

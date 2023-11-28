@@ -77,18 +77,18 @@ const DetailsCard = ({ classes }) => {
             <img src={image} alt='image' className='w-96 h-96' />
           </figure>
           <div className='card-body'>
-            <p className='font-bold'>{title}</p>
+            <p className='font-bold text-xl text-blue-600'>---{title}---</p>
             <p>
-              <span className='font-bold bg-slate-400 text-black p-2 rounded-md text-sm'>
+              <span className='font-bold bg-pink-600 text-white p-2 rounded-md text-sm'>
                 Price: ${price}
               </span>
-              <span className='font-bold bg-slate-400 text-black p-2 rounded-md ml-4 text-sm'>
+              <span className='font-bold bg-pink-600 text-white p-2 rounded-md ml-4 text-sm'>
                 Teacher Name: {teacherName}
               </span>
             </p>
 
-            <p>
-              <span className='font-bold'></span> {short_description}
+            <p  className='font-semibold text-gray-600'>
+              {short_description}
             </p>
             <div className='card-actions justify-end'>
               <button onClick={() => handleAddToCart(classes)} className='btn border-none bg-gradient-to-r  from-pink-500 to-blue-500 text-white'>
