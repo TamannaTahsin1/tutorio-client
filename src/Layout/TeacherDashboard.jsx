@@ -9,6 +9,7 @@ const TeacherDashboard = () => {
     const [isTeacher] = useTeacher()
     return (
         <div>
+          
         <div className='flex'>
           {/* dashboard sidebar */}
           <div className='w-64 min-h-screen bg-black text-orange-400'>

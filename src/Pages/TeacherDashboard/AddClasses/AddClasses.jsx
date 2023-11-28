@@ -56,7 +56,7 @@ const AddClasses = () => {
           data-aos-duration='500'>
           <div className=' bg-slate-700 p-20 '>
             <h2 className='text-4xl font-extrabold bg-gradient-to-r from-pink-100 via-blue-500 to-gray-700 text-transparent bg-clip-text text-center mb-10'>
-              Apply in Tutorio
+             Add Classes
             </h2>
             <form onSubmit={handleAddClasses}>
               {/* user name and email */}
@@ -120,7 +120,7 @@ const AddClasses = () => {
                 </div>
               </div>
               {/* form details and price row */}
-              <div className='md:flex gap-3'>
+              <div className='md:flex gap-3 mb-5'>
                 <div className='form-control md:w-1/2'>
                   <label className='label'>
                     <span className='label-text'>About Subject</span>

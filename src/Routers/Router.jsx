@@ -120,6 +120,7 @@ const router = createBrowserRouter([
         {
             path:'myClasses',
             element:<MyClasses></MyClasses>,
+            loader: () => fetch('http://localhost:5000/newClasses')
         },
     ]
   }

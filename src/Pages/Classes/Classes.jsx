@@ -157,7 +157,7 @@ const Classes = () => {
                         id='modal-modal-title'
                         variant='h6'
                         component='h2'>
-                        <img src={slide1} alt='' />
+                        <img src={slide2} alt='' />
                       </Typography>
                       <Typography
                         sx={{
@@ -230,7 +230,7 @@ const Classes = () => {
                         id='modal-modal-title'
                         variant='h6'
                         component='h2'>
-                        <img src={slide1} alt='' />
+                        <img src={slide3} alt='' />
                       </Typography>
                       <Typography
                         sx={{
@@ -299,7 +299,7 @@ Digital marketing is the strategic use of online channels.</p>
                         id='modal-modal-title'
                         variant='h6'
                         component='h2'>
-                        <img src={slide1} alt='' />
+                        <img src={slide4} alt='' />
                       </Typography>
                       <Typography
                         sx={{
@@ -367,7 +367,7 @@ Digital marketing is the strategic use of online channels.</p>
                         id='modal-modal-title'
                         variant='h6'
                         component='h2'>
-                        <img src={slide1} alt='' />
+                        <img src={slide5} alt='' />
                       </Typography>
                       <Typography
                         sx={{
