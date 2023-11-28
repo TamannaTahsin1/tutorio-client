@@ -1,7 +1,10 @@
 import { Helmet } from "react-helmet";
+import useAuth from "../../../Hooks/useAuth";
+import Swal from "sweetalert2";
 
 
 const AddClasses = () => {
+  const {user} = useAuth()
     const handleAddClasses = e =>{
         e.preventDefault();
         const form = e.target;
@@ -12,7 +15,7 @@ const AddClasses = () => {
         const description = form.description.value;
         const price = form.price.value;
     
-        const newTeacher = {
+        const addNewClasses = {
           name,
           email,
           title,
@@ -20,12 +23,32 @@ const AddClasses = () => {
           description,
           price,
         };
-        console.log(newTeacher);
+        console.log(addNewClasses);
+        // send data to the server
+        fetch('http://localhost:5000/newClasses',{
+          method: 'POST',
+          headers:{
+            'content-type' : 'application/json'
+          },
+          body: JSON.stringify(addNewClasses)
+        })
+        .then(res => res.json())
+        .then(data =>{
+          console.log(data);
+          if(data.insertedId){
+            Swal.fire({
+              title: 'Success!',
+              text: 'New Class has been Added',
+              icon: 'success',
+              confirmButtonText: 'Cool'
+            })
+          }
+        })
     }
     return (
         <div>
         <Helmet>
-          <title>Tutorio | Apply Form</title>
+          <title>Tutorio | Add Classes</title>
         </Helmet>
         <div
           className='container mx-auto mt-20'
@@ -46,7 +69,7 @@ const AddClasses = () => {
                     <input
                       name='name'
                       type='text'
-                      //   defaultValue={user?.displayName}
+                        defaultValue={user?.displayName}
                       placeholder='name'
                       className='input input-bordered w-full'
                     />
@@ -60,7 +83,7 @@ const AddClasses = () => {
                     <input
                       name='email'
                       type='email'
-                      //   defaultValue={user?.email}
+                        defaultValue={user?.email}
                       placeholder='email@gmail.com'
                       className='input input-bordered w-full'
                     />
