@@ -18,6 +18,10 @@ import UserProfile from "../Pages/Dashboard/UserProfile/UserProfile";
 import TeacherReq from "../Pages/Dashboard/TeacherReq/TeacherReq";
 import ManageClasses from "../Pages/Dashboard/ManageClasses/ManageClasses";
 import SomeClasses from "../Pages/Home/SomeClasses/SomeClasses";
+import TeacherDashboard from "../Layout/TeacherDashboard";
+import TeacherProfile from "../Pages/TeacherDashboard/TeacherProfile/TeacherProfile";
+import AddClasses from "../Pages/TeacherDashboard/AddClasses/AddClasses";
+import MyClasses from "../Pages/TeacherDashboard/MyClasses/MyClasses";
 
 const router = createBrowserRouter([
   {
@@ -97,21 +101,25 @@ const router = createBrowserRouter([
   },
   {
     path:'teacherDashboard',
-    element:<PrivateRoute><Dashboard></Dashboard></PrivateRoute>,
+    element:<PrivateRoute><TeacherDashboard></TeacherDashboard></PrivateRoute>,
     children:[
         // all user routes
         {
             path:'cart',
             element:<Cart></Cart>,
         },
+        // teachers only routes
         {
-            path:'profile',
-            element:<UserProfile></UserProfile>,
+            path:'teacherHome',
+            element:<TeacherProfile></TeacherProfile>,
         },
-        // admin routes
         {
-            path:'manageClasses',
-            element:<ManageClasses></ManageClasses>,
+            path:'addClasses',
+            element:<AddClasses></AddClasses>,
+        },
+        {
+            path:'myClasses',
+            element:<MyClasses></MyClasses>,
         },
     ]
   }

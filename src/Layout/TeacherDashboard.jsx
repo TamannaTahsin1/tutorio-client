@@ -25,7 +25,7 @@ const TeacherDashboard = () => {
                 isTeacher ? <>
                 <li className='font-semibold text-lg'>
                 <NavLink
-                  to='/teacherDashboard/adminHome'
+                  to='/teacherDashboard/teacherHome'
                   className={({ isActive, isPending }) =>
                     isPending
                       ? "pending"
@@ -39,7 +39,7 @@ const TeacherDashboard = () => {
               </li>
               <li className='font-semibold text-lg'>
                 <NavLink
-                  to='/teacherDashboard/manageClasses'
+                  to='/teacherDashboard/addClasses'
                   className={({ isActive, isPending }) =>
                     isPending
                       ? "pending"
@@ -48,7 +48,21 @@ const TeacherDashboard = () => {
                       : ""
                   }>
                   <FaShoppingCart />
-                  All Classes
+                  Add Classes
+                </NavLink>
+              </li>
+              <li className='font-semibold text-lg'>
+                <NavLink
+                  to='/teacherDashboard/myClasses'
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-white text-base bg-orange-400"
+                      : ""
+                  }>
+                  <FaShoppingCart />
+                  My Classes
                 </NavLink>
               </li>
                 </>
