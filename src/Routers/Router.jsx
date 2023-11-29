@@ -125,11 +125,6 @@ const router = createBrowserRouter([
     path:'teacherDashboard',
     element:<PrivateRoute><TeacherDashboard></TeacherDashboard></PrivateRoute>,
     children:[
-        // all user routes
-        {
-            path:'cart',
-            element:<Cart></Cart>,
-        },
         // teachers only routes
         {
             path:'teacherHome',

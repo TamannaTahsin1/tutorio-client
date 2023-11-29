@@ -27,7 +27,19 @@ const SomeClasses = () => {
             someClasses?.slice(0,6).map(item =><SomeClassesCard key={item._id} item={item}></SomeClassesCard>)
         }
       </div>
-      <div className="flex justify-center items-center mt-5" data-aos="fade-down-right">
+      <div className="flex justify-center items-center mt-5">
+        <div  className='relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-1/2 before:-top-3 before:w-max before:max-w-xs before: -translate-x-1/2 before:-translate-y-full before:bg-gray-700 before:text-white before:rounded-md before:opacity-0 before: transition-all
+            
+            after:absolute after:left-1/2 after:-top-3 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-t-gray-700
+            after:border-l-transparent
+            after:border-b-transparent
+            after:border-r-transparent
+            after:opacity-0
+            after:transition-all
+
+            hover:before:opacity-100 hover:after:opacity-100
+            '
+            data-tip='see class'>
         <Link to='/classes'>
         <button
         onClick={() => setIsShow(!isShow)}
@@ -37,6 +49,7 @@ const SomeClasses = () => {
             }
           </button>
         </Link>
+        </div>
         </div>
     </div>
   );

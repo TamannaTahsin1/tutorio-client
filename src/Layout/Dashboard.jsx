@@ -24,6 +24,8 @@ const Dashboard = () => {
             </a>
           </div>
           <ul className='menu p-4'>
+
+            {/* *************ADMIN*************** */}
             {
               isAdmin ? <>
               <li className='font-semibold text-lg'>
@@ -129,6 +131,7 @@ const Dashboard = () => {
             </li>
               </>
             }
+            {/* *************TEACHER*************** */}
               {
                 isTeacher && <>
                 <li className='font-semibold text-lg'>

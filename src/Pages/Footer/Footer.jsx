@@ -1,68 +1,53 @@
-import { Box, Typography } from "@mui/material";
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 
 const Footer = () => {
   return (
-    <footer>
-      <Box sx={{
-        textAlign: 'center',
-        padding: '1rem',
-        lineHeight: '2rem',
-        backgroundColor: 'rgb(31, 41, 55)'
-      }}>
-        <Typography sx={{
-          fontWeight: 'bold',
-          fontSize: '1.5rem',
-          color: 'rgb(59, 130, 246)'
-        }}>
-          Tutorio
-        </Typography>
-        <Typography>
-          &copy; {new Date().getFullYear()} Tutorio. All rights reserved. 
-        </Typography>
-        <Typography>
-          123 Main Street, City, State, Country
-        </Typography>
-        <Typography>
-          Call Us: +008123456
-        </Typography>
-        <Typography>
-          tutorio@gmail.com
-        </Typography>
-        <Box sx={{marginTop: '1rem'}}>
-            <a>
-            <InstagramIcon sx={{
-               marginRight: '10px',
-              transition: 'color 0.3s ease',
-              '&:hover':{
-                color: 'rgb(0, 0, 255)'
-              }
-            }}/>
-            </a>
-            <a>
-            <FacebookIcon sx={{
-               marginRight: '10px',
-              transition: 'color 0.3s ease',
-              '&:hover':{
-                color: 'rgb(0, 0, 255)'
-              }
-            }}/>
-            </a>
-            <a>
-            <LinkedInIcon sx={{
-              marginRight: '10px',
-              transition: 'color 0.3s ease',
-              '&:hover':{
-                color: 'rgb(0, 0, 255)'
-              }
-            }}/>
-            </a>
-        </Box>
-      </Box>
-    </footer>
+    <div>
+      <footer className='w-full p-8 bg-gray-700'>
+        <div className='flex flex-row flex-wrap items-center justify-center text-center  gap-y-6 gap-x-12 md:justify-between'>
+          <div className='flex'>
+          
+          <p className='text-blue-600 font-bold text-2xl'>
+            Tutorio
+          </p>
+          </div>
+          <ul className='flex flex-wrap items-center gap-y-2 gap-x-8'>
+            <li>
+              <a
+                href='#'
+                className='block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500'>
+                About Us
+              </a>
+            </li>
+            <li>
+              <a
+                href='#'
+                className='block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500'>
+                License
+              </a>
+            </li>
+            <li>
+              <a
+                href='#'
+                className='block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500'>
+                Contribute
+              </a>
+            </li>
+            <li>
+              <a
+                href='#'
+                className='block font-sans text-base antialiased font-normal leading-relaxed transition-colors text-blue-gray-900 hover:text-blue-500 focus:text-blue-500'>
+                Contact Us
+              </a>
+            </li>
+          </ul>
+        </div>
+        <span className='block my-8 border-t border-blue-gray-50' />
+        <p className='block font-sans text-base antialiased font-normal leading-relaxed text-center text-blue-gray-900'>
+          © 2023 All rights are reserved.
+        </p>
+      </footer>
+    </div>
   );
 };
 

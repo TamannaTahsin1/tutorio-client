@@ -77,19 +77,6 @@ const Navbar = () => {
           Teach on Tutorio
         </NavLink>
       </li>
-      <li className='font-bold'>
-        <NavLink
-          to='/login'
-          className={({ isActive, isPending }) =>
-            isPending
-              ? "pending"
-              : isActive
-              ? "text-white font-bold  bg-blue-300"
-              : ""
-          }>
-          Login
-        </NavLink>
-      </li>
     </>
   );
   return (
