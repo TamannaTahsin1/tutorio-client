@@ -8,7 +8,7 @@ const Instructor = () => {
       <figure>
         <img
           src={img}
-          className='w-[700px] h-96'
+          className='lg:w-[700px] h-96'
           alt='human'
         />
       </figure>

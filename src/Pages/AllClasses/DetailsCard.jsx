@@ -57,7 +57,7 @@ const DetailsCard = ({ classes }) => {
   }
   return (
     <div className=''>
-      <div className='h-[30vh] w-[1000px]'>
+      <div className='h-[30vh] lg:w-[1000px]'>
         <div
           className='hero'
           style={{
@@ -72,9 +72,9 @@ const DetailsCard = ({ classes }) => {
         </div>
       </div>
       <div>
-        <div className='card card-96 card-side bg-base-100 shadow-xl '>
+        <div className='lg:card card-96 card-side bg-base-100 shadow-xl '>
           <figure>
-            <img src={image} alt='image' className='w-96 h-96' />
+            <img src={image} alt='image' className='w-96 lg:h-96' />
           </figure>
           <div className='card-body'>
             <p className='font-bold text-xl text-blue-600'>---{title}---</p>

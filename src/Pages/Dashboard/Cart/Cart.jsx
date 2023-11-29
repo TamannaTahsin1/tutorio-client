@@ -1,3 +1,5 @@
+/** @format */
+
 import { FaTrashAlt } from "react-icons/fa";
 import useCart from "../../../Hooks/useCart";
 import Swal from "sweetalert2";
@@ -38,22 +40,28 @@ const Cart = () => {
 
   return (
     <div className='my-10'>
-                 <Helmet>
+      <Helmet>
         <title>Tutorio | Cart</title>
       </Helmet>
       <div>
-        <h2 className="text-center text-4xl text-orange-600 font-bold">My Enrolled Classes</h2>
+        <h2 className='text-center text-4xl text-blue-600 font-bold'>
+          My Enrolled Classes
+        </h2>
       </div>
       <div className='text-2xl flex justify-evenly my-10 '>
         <h2>Total Classes: {cart.length}</h2>
         <h2>Total Price: ${totalPrice}</h2>
-    {
-      cart.length ?         <Link to='/dashboard/payment'>
-      <button className='btn bg-orange-400 text-white'>Pay now</button>
-      </Link>
-      :
-      <button disabled className='btn bg-orange-400 text-white'>Pay now</button>
-    }
+        {cart.length ? (
+          <Link to='/dashboard/payment'>
+            <button className='btn bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>
+              Pay now
+            </button>
+          </Link>
+        ) : (
+          <button disabled className='btn bg-orange-400 text-white'>
+            Pay now
+          </button>
+        )}
       </div>
       {/* table*/}
       <div className='overflow-hidden'>
