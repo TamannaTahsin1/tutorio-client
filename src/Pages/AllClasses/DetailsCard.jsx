@@ -72,7 +72,7 @@ const DetailsCard = ({ classes }) => {
         </div>
       </div>
       <div>
-        <div className='lg:card card-96 card-side bg-base-100 shadow-xl '>
+        <div className='card card-96 card-side bg-base-100 shadow-xl '>
           <figure>
             <img src={image} alt='image' className='w-96 lg:h-96' />
           </figure>

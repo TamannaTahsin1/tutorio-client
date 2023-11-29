@@ -26,6 +26,7 @@ import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
 import SeeDetails from "../Pages/TeacherDashboard/MyClasses/SeeDetails/SeeDetails";
 import Payment from "../Pages/Dashboard/Payment/Payment";
 import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
+import StudentAssignment from "../Pages/Dashboard/StudentAssignment/StudentAssignment";
 
 const router = createBrowserRouter([
   {
@@ -81,7 +82,16 @@ const router = createBrowserRouter([
         // all user routes
         {
             path:'cart',
-            element:<Cart></Cart>,
+            element:<PrivateRoute><Cart></Cart></PrivateRoute>,
+        },
+        {
+            path:'profile',
+            element:<PrivateRoute><UserProfile></UserProfile></PrivateRoute>,
+        },
+        {
+            path:'assignment',
+            element:<PrivateRoute><StudentAssignment></StudentAssignment></PrivateRoute>,
+            loader: () => fetch('http://localhost:5000/assignment')
         },
         {
             path:'payment',
@@ -90,10 +100,6 @@ const router = createBrowserRouter([
         {
             path:'paymentHistory',
             element:<PaymentHistory></PaymentHistory>,
-        },
-        {
-            path:'profile',
-            element:<UserProfile></UserProfile>,
         },
         // admin routes
         {

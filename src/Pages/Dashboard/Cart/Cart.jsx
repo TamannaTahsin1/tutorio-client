@@ -99,12 +99,18 @@ const Cart = () => {
                   <br />
                 </td>
                 <td>${item.price}</td>
-                <th>
+                <th className="flex items-center">
                   <button
                     onClick={() => handleDelete(item._id)}
                     className='btn btn-ghost btn-lg text-red-600'>
                     <FaTrashAlt />
                   </button>
+              <Link to='/dashboard/assignment'> 
+              <button
+                    className='btn btn-ghost btn-sm text-blue-600'>
+                   Continue
+                  </button>
+                  </Link>
                 </th>
               </tr>
             ))}
