@@ -1,21 +1,11 @@
-/** @format */
-
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import logo from "../../assets/img/logo.png";
-
-import { Link, NavLink } from "react-router-dom";
-import { AuthContext } from "../../Providers/AuthProvider";
 import useCart from "../../Hooks/useCart";
+import MenuDropdown from "./MenuDropdown";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
   const [cart] = useCart();
-  // for logout
-  const handleLogOut = () => {
-    logOut()
-    .then(() =>{})
-    .catch()
-  };
     // for theme
     const [theme, setTheme] = useState(localStorage.getItem('theme') ? localStorage.getItem('theme') : 'light');
     const handleToggle = (e) => {
@@ -103,7 +93,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className='navbar bg-base-100'>
+    <div className=' navbar z-10 bg-base-100'>
       <div className='navbar-start'>
         <div className='dropdown'>
           <label tabIndex={0} className='btn btn-ghost lg:hidden'>
@@ -131,7 +121,7 @@ const Navbar = () => {
           <div>
             <img src={logo} alt='' className='w-16 h-16' />
           </div>
-          <a className='btn btn-ghost normal-case text-2xl font-extrabold bg-gradient-to-r from-red-600 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
+          <a className='btn btn-ghost normal-case text-2xl font-extrabold bg-gradient-to-r from-pink-600 to-blue-600 text-transparent bg-clip-text'>
             Tutorio
           </a>
         </div>
@@ -140,38 +130,7 @@ const Navbar = () => {
         <ul className='menu menu-horizontal px-1'>{navLinks}</ul>
       </div>
       <div className='navbar-end'>
-          {user?.email ? (
-            <div className='dropdown dropdown-end'>
-              <label tabIndex={0} className='btn btn-ghost btn-circle avatar'>
-                <div className='w-10 rounded-full'>
-                  <img src={user.photoURL} />
-                </div>
-              </label>
-              <ul
-                tabIndex={0}
-                className='menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52'>
-                <li>
-                  <button className='btn btn-sm  btn-ghost'>
-                    {user.displayName}
-                  </button>
-                </li>
-                <li>
-                <Link to='/dashboard/users'>
-                  <button className="btn btn-sm  btn-ghost">Dashboard</button>
-                  </Link>
-                </li>
-                <li>
-                <button onClick={handleLogOut} className="btn btn-sm-btn-ghost">Logout</button>
-                </li>
-              </ul>
-            </div>
-          ) : (
-            <Link to='/login'>
-              <button className='btn border-none bg-gradient-to-r from-yellow-400 to-yellow-700 hover:from-red-500 hover:to-orange-500 text-white'>
-                Login
-              </button>
-            </Link>
-          )}
+          <MenuDropdown></MenuDropdown>
                   {/* for theme button */}
         <div className="px-5">
           <label className='swap swap-rotate'>

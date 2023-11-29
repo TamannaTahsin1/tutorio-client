@@ -1,12 +1,13 @@
 import { NavLink, Outlet } from "react-router-dom";
 import logo from '../assets/img/logo.png'
-import useTeacher from "../Hooks/useTeacher";
+// import useTeacher from "../Hooks/useTeacher";
 import { FaBook, FaHome, FaShoppingCart } from "react-icons/fa";
-import useCart from "../Hooks/useCart";
+// import useCart from "../Hooks/useCart";
 
 const TeacherDashboard = () => {
-    const [cart] = useCart();
-    const [isTeacher] = useTeacher()
+    // const [cart] = useCart();
+    // const [isTeacher] = useTeacher()
+
     return (
         <div>
           
@@ -22,8 +23,7 @@ const TeacherDashboard = () => {
               </a>
             </div>
             <ul className='menu p-4'>
-              {
-                isTeacher ? <>
+            
                 <li className='font-semibold text-lg'>
                 <NavLink
                   to='/teacherDashboard/teacherHome'
@@ -66,39 +66,8 @@ const TeacherDashboard = () => {
                   My Classes
                 </NavLink>
               </li>
-                </>
-                :
-                <>
-                <li className='font-semibold text-lg'>
-                <NavLink
-                  to='/teacherDashboard/profile'
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "text-white  text-base bg-orange-400"
-                      : ""
-                  }>
-                  <FaHome></FaHome>
-                  My Profile
-                </NavLink>
-              </li>
-              <li className='font-semibold text-lg'>
-                <NavLink
-                  to='/teacherDashboard/cart'
-                  className={({ isActive, isPending }) =>
-                    isPending
-                      ? "pending"
-                      : isActive
-                      ? "text-white text-base bg-orange-400"
-                      : ""
-                  }>
-                  <FaShoppingCart />
-                  My Cart ({cart.length})
-                </NavLink>
-              </li>
-                </>
-              }
+              
+               
               {/* shared nav links */}
               <div className='divider text-black'></div>
               <li className='font-semibold text-lg'>

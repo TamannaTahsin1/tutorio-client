@@ -22,6 +22,10 @@ import TeacherDashboard from "../Layout/TeacherDashboard";
 import TeacherProfile from "../Pages/TeacherDashboard/TeacherProfile/TeacherProfile";
 import AddClasses from "../Pages/TeacherDashboard/AddClasses/AddClasses";
 import MyClasses from "../Pages/TeacherDashboard/MyClasses/MyClasses";
+import AdminProfile from "../Pages/Dashboard/AdminProfile/AdminProfile";
+import SeeDetails from "../Pages/TeacherDashboard/MyClasses/SeeDetails/SeeDetails";
+import Payment from "../Pages/Dashboard/Payment/Payment";
+import PaymentHistory from "../Pages/Dashboard/PaymentHistory/PaymentHistory";
 
 const router = createBrowserRouter([
   {
@@ -80,10 +84,22 @@ const router = createBrowserRouter([
             element:<Cart></Cart>,
         },
         {
+            path:'payment',
+            element:<Payment></Payment>,
+        },
+        {
+            path:'paymentHistory',
+            element:<PaymentHistory></PaymentHistory>,
+        },
+        {
             path:'profile',
             element:<UserProfile></UserProfile>,
         },
         // admin routes
+        {
+            path:'adminHome',
+            element:<AdminProfile></AdminProfile>,
+        },
         {
             path:'users',
             element:<AdminRoute><AllUsers></AllUsers></AdminRoute>,
@@ -120,6 +136,11 @@ const router = createBrowserRouter([
         {
             path:'myClasses',
             element:<MyClasses></MyClasses>,
+            loader: () => fetch('http://localhost:5000/newClasses')
+        },
+        {
+            path:'seeDetails',
+            element:<SeeDetails></SeeDetails>,
             loader: () => fetch('http://localhost:5000/newClasses')
         },
     ]

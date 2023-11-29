@@ -16,8 +16,8 @@ const SomeClasses = () => {
   }, []);
   return (
     <div>
-      <h2 className='text-center text-blue-600 text-4xl font-bold my-10'>
-        Featured Classes
+      <h2 className='text-center text-4xl bg-gradient-to-r from-pink-600 via-blue-600 to-blue-600 text-transparent bg-clip-text'>
+        ---<span className=" font-bold">Top Classes</span>---
       </h2>
       <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
         {

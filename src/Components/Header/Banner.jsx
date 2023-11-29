@@ -20,7 +20,7 @@ import ban7 from '../../assets/img/banner7.jpg'
 
 const Banner = () => {
     return (
-        <div>
+        <div className='my-10'>
              <Swiper
         spaceBetween={30}
         centeredSlides={true}
@@ -45,7 +45,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <img src={ban2} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
-         <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400 '>Learn Development</p>
+         <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400 '>Learn Design</p>
         <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
         <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
@@ -53,7 +53,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <img src={ban3} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
-        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Business</p>
         <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
         <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
@@ -61,7 +61,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <img src={ban4} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
-        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Photography</p>
         <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
         <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>
@@ -77,7 +77,7 @@ const Banner = () => {
         </SwiperSlide>
         <SwiperSlide>
         <img src={ban6} className='h-[700px] w-full bg-slate-200 opacity-20' alt="" />
-        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Development</p>
+        <p className='text-center text-6xl font-extrabold -mt-96 text-blue-400'>Learn Design</p>
         <p className='mt-2 text-center text-gray-400 font-bold'>Effortlessly track and manage student progress with our intuitive student management platform.</p>
         <div className='flex justify-center items-center'>
         <button className='btn border-none bg-gradient-to-r hover:from-blue-300 hover:to-blue-700 from-pink-500 to-blue-500 text-white'>Browse Course</button>

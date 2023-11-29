@@ -40,9 +40,9 @@ const Classes = () => {
   const handleClose = () => setOpen(false);
   return (
     <div>
-      <h1 className='text-center text-4xl mt-12 mb-20 font-extrabold bg-gradient-to-r from-indigo-500 via-blue-500 to-gray-500 text-transparent bg-clip-text'>
-        Popular Features
-      </h1>
+       <h2 className='my-10 mt-20 text-center text-4xl bg-gradient-to-r from-pink-600 via-blue-600 to-blue-600 text-transparent bg-clip-text'>
+        ---<span className=" font-bold">Popular Features</span>---
+      </h2>
       <Swiper
         slidesPerView={3}
         spaceBetween={30}

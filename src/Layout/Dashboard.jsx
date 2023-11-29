@@ -1,13 +1,15 @@
 import logo from "../assets/img/logo.png";
 import { NavLink, Outlet } from "react-router-dom";
-import { FaHome, FaShoppingCart, FaBook, FaUser } from "react-icons/fa";
+import { FaHome, FaShoppingCart, FaBook, FaUser, FaList } from "react-icons/fa";
 import useCart from "../Hooks/useCart";
 import useAdmin from "../Hooks/useAdmin";
+import useTeacher from "../Hooks/useTeacher";
 
 
 const Dashboard = () => {
   const [cart] = useCart();
   const [isAdmin] = useAdmin();
+  const [isTeacher] =useTeacher()
   return (
     <div>
       <div className='flex'>
@@ -111,8 +113,68 @@ const Dashboard = () => {
                 My Cart ({cart.length})
               </NavLink>
             </li>
+            <li className='font-semibold text-lg'>
+              <NavLink
+                to='/dashboard/paymentHistory'
+                className={({ isActive, isPending }) =>
+                  isPending
+                    ? "pending"
+                    : isActive
+                    ? "text-white text-base bg-orange-400"
+                    : ""
+                }>
+                <FaList/>
+                Payment History
+              </NavLink>
+            </li>
               </>
             }
+              {
+                isTeacher && <>
+                <li className='font-semibold text-lg'>
+                <NavLink
+                  to='/teacherDashboard/teacherHome'
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-white  text-base bg-orange-400"
+                      : ""
+                  }>
+                  <FaHome></FaHome>
+                  Teacher Profile
+                </NavLink>
+              </li>
+              <li className='font-semibold text-lg'>
+                <NavLink
+                  to='/teacherDashboard/addClasses'
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-white text-base bg-orange-400"
+                      : ""
+                  }>
+                  <FaShoppingCart />
+                  Add Classes
+                </NavLink>
+              </li>
+              <li className='font-semibold text-lg'>
+                <NavLink
+                  to='/teacherDashboard/myClasses'
+                  className={({ isActive, isPending }) =>
+                    isPending
+                      ? "pending"
+                      : isActive
+                      ? "text-white text-base bg-orange-400"
+                      : ""
+                  }>
+                  <FaShoppingCart />
+                  My Classes
+                </NavLink>
+              </li>
+                </>
+              }
             {/* shared nav links */}
             <div className='divider text-black'></div>
             <li className='font-semibold text-lg'>

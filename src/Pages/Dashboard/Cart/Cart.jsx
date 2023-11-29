@@ -3,6 +3,7 @@ import useCart from "../../../Hooks/useCart";
 import Swal from "sweetalert2";
 import useAxiosSecure from "../../../Hooks/useAxiosSecure";
 import { Helmet } from "react-helmet";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const [cart, refetch] = useCart();
@@ -46,7 +47,13 @@ const Cart = () => {
       <div className='text-2xl flex justify-evenly my-10 '>
         <h2>Total Classes: {cart.length}</h2>
         <h2>Total Price: ${totalPrice}</h2>
-        <button className='btn bg-orange-400 text-white'>Pay now</button>
+    {
+      cart.length ?         <Link to='/dashboard/payment'>
+      <button className='btn bg-orange-400 text-white'>Pay now</button>
+      </Link>
+      :
+      <button disabled className='btn bg-orange-400 text-white'>Pay now</button>
+    }
       </div>
       {/* table*/}
       <div className='overflow-hidden'>
