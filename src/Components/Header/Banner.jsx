@@ -20,7 +20,7 @@ import ban7 from '../../assets/img/banner7.jpg'
 
 const Banner = () => {
     return (
-        <div className='my-10'>
+        <div>
              <Swiper
         spaceBetween={30}
         centeredSlides={true}
