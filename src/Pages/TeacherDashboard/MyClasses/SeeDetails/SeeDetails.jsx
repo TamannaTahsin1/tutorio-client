@@ -18,7 +18,7 @@ const SeeDetails = () => {
     console.log(newAssignment);
 
     // send data to the server
-    fetch('http://localhost:5000/assignment',{
+    fetch('https://tutorio-server.vercel.app/assignment',{
       method: 'POST',
       headers: {
         'content-type' : 'application/json'

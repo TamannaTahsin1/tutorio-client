@@ -8,7 +8,7 @@ const TeacherReq = () => {
   const [teacherReqs, setTeacherReqs] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/teach")
+    fetch("https://tutorio-server.vercel.app/teach")
       .then((res) => res.json())
       .then((data) => {
         setTeacherReqs(data);
@@ -26,7 +26,7 @@ const TeacherReq = () => {
       confirmButtonText: "Yes, delete it!",
     }).then(() => {
       if (proceed) {
-        fetch(`http://localhost:5000/teach/${id}`, {
+        fetch(`https://tutorio-server.vercel.app/teach/${id}`, {
           method: "DELETE",
           headers: {
             "content-type": "application/json",
@@ -56,7 +56,7 @@ const TeacherReq = () => {
 
   //  approve the pending button
   const handlePending = (id) => {
-    fetch(`http://localhost:5000/teach/${id}`, {
+    fetch(`https://tutorio-server.vercel.app/teach/${id}`, {
       method: "PATCH",
       headers: {
         "content-type": "application/json",

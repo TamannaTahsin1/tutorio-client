@@ -8,7 +8,7 @@ const SomeClasses = () => {
   const [someClasses, setSomeClasses] = useState();
   const [isShow, setIsShow] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:5000/classes")
+    fetch("https://tutorio-server.vercel.app/classes")
       .then((res) => res.json())
       .then((data) => {
         setSomeClasses(data);

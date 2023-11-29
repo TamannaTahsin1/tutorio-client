@@ -12,7 +12,7 @@ import '@smastrom/react-rating/style.css'
 const FeedBack = () => {
     const [feedbacks, setFeedbacks] = useState();
     useEffect(() =>{
-        fetch('http://localhost:5000/feedback')
+        fetch('https://tutorio-server.vercel.app/feedback')
         .then(res => res.json())
         .then(data =>{
             console.log(data)

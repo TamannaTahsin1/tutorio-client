@@ -41,17 +41,17 @@ const router = createBrowserRouter([
         {
             path: "/classes",
             element: <PrivateRoute><AllClasses></AllClasses></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/classes'),
+            loader: () => fetch('https://tutorio-server.vercel.app/classes'),
         },
         {
             path: "/someClasses",
             element: <SomeClasses></SomeClasses>,
-            loader: () => fetch('http://localhost:5000/classes'),
+            loader: () => fetch('https://tutorio-server.vercel.app/classes'),
         },
         {
             path: "/details/:_id",
             element: <PrivateRoute><AllClassesDetails></AllClassesDetails></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/classes'),
+            loader: () => fetch('https://tutorio-server.vercel.app/classes'),
         },
         {
             path: "/teach",
@@ -91,7 +91,7 @@ const router = createBrowserRouter([
         {
             path:'assignment',
             element:<PrivateRoute><StudentAssignment></StudentAssignment></PrivateRoute>,
-            loader: () => fetch('http://localhost:5000/assignment')
+            loader: () => fetch('https://tutorio-server.vercel.app/assignment')
         },
         {
             path:'payment',
@@ -117,7 +117,7 @@ const router = createBrowserRouter([
         {
             path:'teacherReq',
             element:<AdminRoute><TeacherReq></TeacherReq></AdminRoute>,
-            loader: () => fetch('http://localhost:5000/teach')
+            loader: () => fetch('https://tutorio-server.vercel.app/teach')
         }
     ]
   },
@@ -137,12 +137,12 @@ const router = createBrowserRouter([
         {
             path:'myClasses',
             element:<MyClasses></MyClasses>,
-            loader: () => fetch('http://localhost:5000/newClasses')
+            loader: () => fetch('https://tutorio-server.vercel.app/newClasses')
         },
         {
             path:'seeDetails',
             element:<SeeDetails></SeeDetails>,
-            loader: () => fetch('http://localhost:5000/newClasses')
+            loader: () => fetch('https://tutorio-server.vercel.app/newClasses')
         },
     ]
   }

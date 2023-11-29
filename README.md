@@ -1,8 +1,25 @@
-# React + Vite
+# Tutorio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## FAQ
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#### Question 1:Project Name and Live link
+
+Answer 1: Tutorio.
+Live link: 
+
+### Key Features:
+
+# The  Tutorio relies on several external packages for its functionality. Key dependencies include React and React DOM for building the user interface, Emotion for styling components, Material-UI for UI components, and Firebase for backend services. Additionally, the project utilizes various libraries like Axios for HTTP requests, React Query for data fetching and caching, and Swiper for interactive carousels. Make sure to install these dependencies using the specified versions to maintain compatibility and optimal performance.
+
+1. The Navbar component serves as the navigation bar for the student management system. It includes features for managing the user's cart, theme toggling between light and dark modes, and navigation links to different sections of the application. The responsive design is facilitated by a dropdown menu for smaller screens, while larger screens display a horizontal menu. Additionally, a distinctive logo and the project name "Tutorio" are showcased. The theme switch functionality is integrated with a visually appealing button that dynamically updates the interface based on the selected theme, enhancing the overall user experience.
+
+2. The Dashboard component is the central hub for student management, offering a dynamic and user-friendly interface. It features a sidebar with navigational links categorized based on user roles, such as student, teacher, and admin. The sidebar showcases relevant icons and provides quick access to functionalities like profile management, class additions, and viewing cart and payment history. The component is designed to adapt to the user's role, displaying distinct options for administrators, teachers, and standard users, enhancing the overall navigation experience. The dashboard also integrates real-time data display, such as the number of items in the cart, contributing to a seamless user experience.
+
+3. The AdminProfile component provides a comprehensive overview of the admin's key statistics, including revenue, total classes, enrolled users, and a profile image. It uses dynamic data fetching and presents the information in an engaging visual format, enhancing the admin's experience in managing the student platform. The AllUsers component allows administrators to view and manage all users efficiently. It features a responsive table displaying user details, including name, email, and role. Admins can seamlessly convert users to teachers, providing an intuitive interface for user role management. Additionally, the component includes a user deletion feature with confirmation, promoting effective user administration within the student management system. Admin can also manage teacher requests.
+
+4. The AddClasses component facilitates the seamless addition of new classes by teachers. It integrates user authentication, automatically populating the applicant's name and email, streamlining the process. The form includes fields for subject name, image URL, description, and price, providing a user-friendly interface. Upon submission, the component communicates with the server, adding the new class and prompting a success message using SweetAlert2. The SeeDetails component showcases key statistics, including total enrolled students, total assignments, and submitted assignments, through visually appealing cards. It also features a button to create new assignments, triggering a modal with a form to input assignment details such as title, deadline, and description. The component utilizes SweetAlert2 to display a success message upon successful assignment creation, enhancing the user experience.
+
+5. The MyClassesCard component provides a visually appealing card layout for displaying individual classes within the user's profile. It showcases essential information such as the class title, price, teacher's name and email, along with a brief description. The component includes action buttons for viewing details, editing, and deleting classes, offering users a seamless and interactive experience. The use of React Icons and routing with React Router enhances the overall aesthetics and functionality of the component.
+
+# 6. The backend code for the student management website is built with Express.js, MongoDB, and integrates features like user authentication, class management, cart functionality, and payment processing using Stripe. It utilizes middleware such as CORS and JSON parsing for smooth communication between the server and client. The code implements JWT-based authorization for user roles (admin, teacher) and includes APIs for handling classes, new classes, user-related actions, teacher-related actions, assignments, payments, and statistical data. The server runs on a designated port, connecting to a MongoDB Atlas cluster. The code showcases a well-structured and secure approach to handling various aspects of the student management system, providing a robust foundation for the web application.

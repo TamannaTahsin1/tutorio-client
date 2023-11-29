@@ -28,7 +28,7 @@ const Teach = () => {
     };
     console.log(newTeacher);
     // send data to the server
-    fetch("http://localhost:5000/teach", {
+    fetch("https://tutorio-server.vercel.app/teach", {
       method: "POST",
       headers: {
         "content-type": "application/json",

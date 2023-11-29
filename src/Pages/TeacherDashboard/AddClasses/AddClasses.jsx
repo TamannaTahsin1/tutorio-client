@@ -25,7 +25,7 @@ const AddClasses = () => {
         };
         console.log(addNewClasses);
         // send data to the server
-        fetch('http://localhost:5000/newClasses',{
+        fetch('https://tutorio-server.vercel.app/newClasses',{
           method: 'POST',
           headers:{
             'content-type' : 'application/json'
