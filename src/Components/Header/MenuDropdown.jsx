@@ -20,11 +20,11 @@ const MenuDropdown = () => {
                 <div className='relative'>
       <div className='flex flex-row items-center gap-3'>
         {/* Become A Host btn */}
-        <div className='hidden md:block'>
+        {/* <div className='hidden md:block'>
           <button className='disabled:cursor-not-allowed cursor-pointer hover:bg-neutral-100 py-3 px-4 text-sm font-semibold rounded-full  transition'>
             Host your home
           </button>
-        </div>
+        </div> */}
         {/* Dropdown btn */}
         <div
           onClick={() => setIsOpen(!isOpen)}
@@ -68,6 +68,11 @@ const MenuDropdown = () => {
             >
               Logout
             </button>
+            </div>
+            <div>
+            <button className='btn btn-sm  btn-ghost w-full'>
+                    {user.displayName}
+                  </button>
             </div>
             </>
             :
