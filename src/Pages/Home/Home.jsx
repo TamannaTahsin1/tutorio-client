@@ -6,7 +6,7 @@ import Footer from "../Footer/Footer";
 import Partners from "./Partners/Partners";
 import Instructor from "./Instructor/Instructor";
 import SomeClasses from "./SomeClasses/SomeClasses";
-// import FeedBack from "./FeedBack/FeedBack";
+import FeedBack from "./FeedBack/FeedBack";
 
 const Home = () => {
   return (
@@ -19,7 +19,7 @@ const Home = () => {
       <Instructor></Instructor>
       <SomeClasses></SomeClasses>
       <Partners></Partners>
-      {/* <FeedBack></FeedBack> */}
+      <FeedBack></FeedBack>
       <CheckOut></CheckOut>
       <Footer></Footer>
     </div>
